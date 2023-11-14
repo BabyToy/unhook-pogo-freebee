@@ -1,3 +1,4 @@
+const sumDeep = require('./__tests__/sumDeep');
 const excludeByProperty = require('./excludeBy');
 const stripPrivateProperties = require('./strip');
 
@@ -10,7 +11,7 @@ exports.example = () => 'hello world';
 
 exports.stripPrivateProperties = (props, users) => stripPrivateProperties(props, users);
 exports.excludeByProperty = (prop, users) => excludeByProperty(prop, users);
-// exports.sumDeep = () => {};
+exports.sumDeep = (data) => sumDeep(data);
 // exports.applyStatusColor = () => {};
 // exports.createGreeting = () => {};
 // exports.setDefaults = () => {};
